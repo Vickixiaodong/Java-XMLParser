@@ -3,6 +3,11 @@ package com.sasa.test;
 import java.util.List;
 
 import com.sasa.entity.Student;
+import com.sasa.utils.createxml.SASADOM4JCreateXML;
+import com.sasa.utils.createxml.SASADOMCreateXML;
+import com.sasa.utils.createxml.SASAJDOMCreateXML;
+import com.sasa.utils.createxml.SASASAXCreateXML;
+import com.sasa.utils.xmlparser.SASADOM4JXMLParser;
 import com.sasa.utils.xmlparser.SASADOMXMLParser;
 import com.sasa.utils.xmlparser.SASAJDOMXMLParser;
 import com.sasa.utils.xmlparser.SASASAXXMLParser;
@@ -34,5 +39,14 @@ public class Test {
 			System.out.println(student);
 		}
 		System.out.println("============== DOM4J End ==============");
+		// 生成 xml 测试
+		SASADOMCreateXML.DOMCreateXML();
+		System.out.println("生成了 DOMForStudents.xml！");
+		SASASAXCreateXML.SAXCreateXML(studentsList);
+		System.out.println("生成了 SAXForStudents.xml！");
+		SASAJDOMCreateXML.JDOMCreateXML();
+		System.out.println("生成了 JDOMForStudents.xml！");
+		SASADOM4JCreateXML.DOM4JCreateXML();
+		System.out.println("生成了 DOM4JForStudents.xml！");
 	}
 }
