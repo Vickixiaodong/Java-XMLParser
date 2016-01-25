@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<name>李凯伦</name>
+		<age>24</age>
+		<sex>男</sex>
+		<home>滨州</home>
+	</student>
+	<student>
+		<name>张恒</name>
+		<age>22</age>
+		<sex>男</sex>
+		<home>青岛</home>
+	</student>
+	<student>
+		<name>孟颖</name>
+		<age>24</age>
+		<sex>女</sex>
+		<home>枣庄</home>
+	</student>
+	<student>
+		<name>解晓东</name>
+		<age>22</age>
+		<sex>男</sex>
+		<home>临沂</home>
+	</student>
+</students>
